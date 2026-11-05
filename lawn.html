@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stripe &amp; Edge Lawn Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --g1:#2d6a2f; --g2:#357a37; --deep:#10260f; --sun:#ffd23f; --cream:#f7f5e8; --clay:#b8643a; color-scheme:light; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--cream); color:var(--deep); font:17px/1.6 'Work Sans',system-ui,sans-serif; }
+  .tag { background:var(--deep); color:var(--cream); text-align:center; font-size:.82rem; padding:6px 16px; }
+  .hero { background:repeating-linear-gradient(90deg,var(--g1) 0 64px,var(--g2) 64px 128px); color:#fff; position:relative; }
+  .hero::after { content:""; position:absolute; inset:auto 0 0 0; height:34px; background:var(--cream); clip-path:polygon(0 100%,0 60%,4% 20%,8% 70%,12% 10%,16% 65%,20% 25%,24% 75%,28% 15%,32% 60%,36% 20%,40% 70%,44% 12%,48% 66%,52% 24%,56% 72%,60% 14%,64% 62%,68% 22%,72% 74%,76% 16%,80% 66%,84% 20%,88% 70%,92% 12%,96% 62%,100% 22%,100% 100%); }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 20px; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:20px 0; gap:12px; flex-wrap:wrap; }
+  .logo { font:400 1.6rem 'Anton',sans-serif; letter-spacing:.05em; text-transform:uppercase; }
+  .tel { background:var(--sun); color:var(--deep); padding:10px 18px; font-weight:700; text-decoration:none; border-radius:4px; }
+  .hero .wrap { padding-block:40px 110px; }
+  h1 { font:400 clamp(3rem,10vw,7rem)/.92 'Anton',sans-serif; text-transform:uppercase; margin:0 0 20px; text-shadow:0 3px 0 rgba(0,0,0,.25); }
+  h1 em { font-style:normal; color:var(--sun); }
+  .lede { max-width:36ch; font-size:1.15rem; margin:0 0 24px; text-shadow:0 1px 0 rgba(0,0,0,.3); }
+  .btn { display:inline-block; background:var(--sun); color:var(--deep); padding:14px 26px; border-radius:4px; font-weight:700; text-decoration:none; }
+  section { padding-block:56px 12px; }
+  h2 { font:400 clamp(2rem,6vw,3.2rem)/1 'Anton',sans-serif; text-transform:uppercase; margin:0 0 8px; }
+  .sub { margin:0 0 28px; max-width:46ch; color:#3d5a3a; }
+  .seasons { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:0; border:3px solid var(--deep); }
+  .s { padding:20px; border-left:3px solid var(--deep); display:flex; flex-direction:column; gap:8px; }
+  .s:first-child { border-left:0; }
+  .s h3 { font:400 1.6rem 'Anton',sans-serif; text-transform:uppercase; margin:0; letter-spacing:.03em; }
+  .s .mo { font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; opacity:.7; }
+  .s ul { margin:0; padding-left:18px; }
+  .s.spring { background:#cfe8b8; } .s.summer { background:var(--sun); } .s.fall { background:#f1c9a5; } .s.winter { background:#d9e6ee; }
+  .day { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; align-items:center; background:var(--deep); color:var(--cream); padding:36px; margin-top:56px; border-radius:6px; }
+  .day h2 { color:var(--sun); }
+  .day p { margin:0; }
+  .week { display:grid; grid-template-columns:repeat(5,1fr); gap:6px; text-align:center; font-weight:700; font-size:.85rem; }
+  .week div { padding:12px 0; border:2px solid rgba(247,245,232,.3); border-radius:4px; }
+  .week .on { background:var(--sun); color:var(--deep); border-color:var(--sun); }
+  footer { padding:36px 0 28px; color:#4d6a49; font-size:.9rem; }
+  @media (max-width:720px) { .day { grid-template-columns:1fr; padding:24px; } .s { border-left:0; border-top:3px solid var(--deep); } .s:first-child { border-top:0; } }
+</style>
+</head>
+<body>
+<div class="tag">Example site by VirtueWebApps. The business, phone, and prices are fictional.</div>
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <div class="logo">Stripe &amp; Edge</div>
+      <a class="tel" href="tel:5550100170">(555) 010-0170</a>
+    </nav>
+    <h1>Stripes you can <em>see</em> from the street.</h1>
+    <p class="lede">Weekly mowing, crisp edges, and seasonal cleanups for homes that want to be the best-looking lawn on the block.</p>
+    <a class="btn" href="#year">Our yearly plan</a>
+  </div>
+</header>
+<div class="wrap">
+  <section id="year">
+    <h2>A lawn plan for all four seasons</h2>
+    <p class="sub">Sign up once and we show up when the yard needs us, not when it's already a mess.</p>
+    <div class="seasons">
+      <div class="s spring"><span class="mo">Mar - May</span><h3>Spring</h3><ul><li>Debris and leaf cleanup</li><li>Edge and mulch beds</li><li>First mow, high setting</li></ul></div>
+      <div class="s summer"><span class="mo">Jun - Aug</span><h3>Summer</h3><ul><li>Weekly mow and trim</li><li>Edge every visit</li><li>Weed check on beds</li></ul></div>
+      <div class="s fall"><span class="mo">Sep - Nov</span><h3>Fall</h3><ul><li>Leaf removal, every other week</li><li>Aeration and overseeding</li><li>Final low mow</li></ul></div>
+      <div class="s winter"><span class="mo">Dec - Feb</span><h3>Winter</h3><ul><li>Storm debris pickup</li><li>Tree-limb haul-off</li><li>Plan next spring's beds</li></ul></div>
+    </div>
+  </section>
+  <section>
+    <div class="day">
+      <div>
+        <h2>Your mow day stays your mow day</h2>
+        <p>Pick a weekday and we keep it. If rain pushes us back, we text you the new day before you wonder where we are.</p>
+      </div>
+      <div class="week"><div>MON</div><div>TUE</div><div class="on">WED</div><div>THU</div><div>FRI</div></div>
+    </div>
+  </section>
+</div>
+<footer><div class="wrap">&copy; 2026 Stripe &amp; Edge Lawn Co. Example business for demonstration only.</div></footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ridgeback Roofing &amp; Gutters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --char:#16181b; --slate:#23272c; --steel:#8b949e; --paper:#f3f1ec; --flame:#ff5a1f; --ember:#ffb199; color-scheme:dark; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--char); color:var(--paper); font:17px/1.6 'Barlow',system-ui,sans-serif; }
+  .tag { background:var(--flame); color:#1a0a03; text-align:center; font-size:.82rem; padding:6px 16px; font-weight:600; }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:20px 0; gap:12px; flex-wrap:wrap; }
+  .logo { font:800 1.5rem 'Barlow Condensed',sans-serif; letter-spacing:.06em; text-transform:uppercase; display:flex; align-items:center; gap:10px; }
+  .logo i { width:26px; height:26px; background:var(--flame); clip-path:polygon(50% 0,100% 100%,0 100%); display:inline-block; }
+  .call { font:700 1.15rem 'Barlow Condensed',sans-serif; letter-spacing:.08em; color:var(--paper); border:2px solid var(--flame); padding:8px 16px; text-decoration:none; }
+  .hero { position:relative; overflow:hidden; }
+  .hero::before { content:""; position:absolute; right:-8%; top:0; bottom:0; width:56%; background:var(--flame); clip-path:polygon(34% 0,100% 0,100% 100%,0 100%); opacity:.97; }
+  .hero::after { content:""; position:absolute; right:-8%; top:0; bottom:0; width:56%; background:repeating-linear-gradient(-63deg,rgba(0,0,0,.14) 0 3px,transparent 3px 26px); clip-path:polygon(34% 0,100% 0,100% 100%,0 100%); }
+  .hero .wrap { position:relative; z-index:1; padding-block:56px 72px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:24px; }
+  h1 { font:800 clamp(3.2rem,11vw,6.6rem)/.88 'Barlow Condensed',sans-serif; text-transform:uppercase; margin:0 0 20px; letter-spacing:-.01em; }
+  h1 em { font-style:normal; color:var(--flame); display:block; }
+  .lede { max-width:30ch; color:#d4d1ca; margin:0 0 28px; font-size:1.1rem; }
+  .btn { display:inline-block; background:var(--flame); color:#1a0a03; font:700 1.1rem 'Barlow Condensed',sans-serif; letter-spacing:.1em; text-transform:uppercase; padding:14px 26px; text-decoration:none; }
+  .pitch { align-self:end; justify-self:end; text-align:right; color:#1a0a03; font:800 1.1rem 'Barlow Condensed',sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .pitch b { display:block; font-size:clamp(3rem,9vw,5.5rem); line-height:.9; }
+  .facts { background:var(--slate); border-block:1px solid #343a41; }
+  .facts .wrap { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); }
+  .fact { padding:22px 20px; border-left:1px solid #343a41; }
+  .fact:first-child { border-left:0; }
+  .fact b { display:block; font:800 2rem/1 'Barlow Condensed',sans-serif; color:var(--flame); text-transform:uppercase; }
+  .fact span { color:var(--steel); font-size:.95rem; }
+  section.steps { padding:64px 0; }
+  h2 { font:800 clamp(2rem,6vw,3.2rem)/1 'Barlow Condensed',sans-serif; text-transform:uppercase; margin:0 0 8px; }
+  .sub { color:var(--steel); margin:0 0 32px; max-width:48ch; }
+  ol { list-style:none; padding:0; margin:0; display:grid; gap:0; }
+  li { display:grid; grid-template-columns:76px minmax(0,1fr); gap:16px; padding:20px 0; border-top:1px solid #343a41; align-items:baseline; }
+  li:last-child { border-bottom:1px solid #343a41; }
+  li .n { font:800 3rem/1 'Barlow Condensed',sans-serif; color:var(--flame); }
+  li h3 { margin:0 0 4px; font:700 1.4rem 'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:.04em; }
+  li p { margin:0; color:#c9c6bf; max-width:56ch; }
+  .storm { background:var(--paper); color:var(--char); padding:56px 0; }
+  .storm .wrap { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:24px; align-items:center; }
+  .storm h2 { color:var(--char); }
+  .storm p { margin:0; max-width:46ch; }
+  .storm .btn { background:var(--char); color:var(--paper); }
+  footer { padding:28px 0; color:var(--steel); font-size:.9rem; }
+  @media (max-width:640px) { .hero::before,.hero::after { width:100%; right:0; clip-path:polygon(0 70%,100% 45%,100% 100%,0 100%); } .hero .wrap { grid-template-columns:1fr; padding-bottom:140px; } .pitch { justify-self:start; text-align:left; } .storm .wrap { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="tag">Example site by VirtueWebApps. The business, phone, and prices are fictional.</div>
+<div class="wrap">
+  <nav>
+    <div class="logo"><i></i>Ridgeback Roofing</div>
+    <a class="call" href="tel:5550100140">(555) 010-0140</a>
+  </nav>
+</div>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Dry by dark.<em>Every time.</em></h1>
+      <p class="lede">Leak repairs, full roofs, and gutters, done by one crew from first look to final magnet sweep.</p>
+      <a class="btn" href="#process">See how a job runs</a>
+    </div>
+    <div class="pitch"><b>6/12</b>Pitch we climb daily</div>
+  </div>
+</header>
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><b>Same-day tarp</b><span>For storm damage, we cover it first</span></div>
+    <div class="fact"><b>Photo report</b><span>You see the damage before you pay</span></div>
+    <div class="fact"><b>Written scope</b><span>Squares, materials, and price in writing</span></div>
+  </div>
+</div>
+<section class="steps" id="process">
+  <div class="wrap">
+    <h2>One job, five stages</h2>
+    <p class="sub">No surprises on the invoice or in the yard. This is the order we work in.</p>
+    <ol>
+      <li><span class="n">1</span><div><h3>Inspect</h3><p>We walk the roof, check the decking and flashing, and photograph every problem spot.</p></div></li>
+      <li><span class="n">2</span><div><h3>Quote</h3><p>A written scope with the number of roofing squares, shingle line, and a fixed price.</p></div></li>
+      <li><span class="n">3</span><div><h3>Tear-off</h3><p>Tarps over landscaping, plywood over the AC, and a dump trailer on the driveway.</p></div></li>
+      <li><span class="n">4</span><div><h3>Install</h3><p>Underlayment, ice and water shield at the edges, shingles nailed to spec, new vents and flashing.</p></div></li>
+      <li><span class="n">5</span><div><h3>Clean-up</h3><p>Magnetic sweep for nails across the yard and driveway, then a final walk-through with you.</p></div></li>
+    </ol>
+  </div>
+</section>
+<section class="storm">
+  <div class="wrap">
+    <div><h2>Storm last night?</h2><p>Call the number above. We tarp the damage the same day so the rest of the house stays dry while we sort out the repair.</p></div>
+    <a class="btn" href="tel:5550100140">Call (555) 010-0140</a>
+  </div>
+</section>
+<footer><div class="wrap">&copy; 2026 Ridgeback Roofing &amp; Gutters. Example business for demonstration only.</div></footer>
+</body>
+</html>

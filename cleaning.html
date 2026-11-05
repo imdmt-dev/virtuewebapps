@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linen &amp; Lemon Cleaning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --mist:#eef6f3; --ink:#12403a; --teal:#1f7a6d; --lemon:#f6d55c; --pearl:#ffffff; --soft:#d5e8e1; color-scheme:light; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--mist); color:var(--ink); font:17px/1.65 'Figtree',system-ui,sans-serif; }
+  .tag { background:var(--ink); color:#e5f3ee; text-align:center; font-size:.82rem; padding:6px 16px; }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 20px; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:22px 0; gap:12px; flex-wrap:wrap; }
+  .logo { font:400 1.7rem 'DM Serif Display',serif; display:flex; align-items:center; gap:10px; }
+  .logo i { width:30px; height:30px; border-radius:50% 50% 50% 8%; background:var(--lemon); display:inline-block; transform:rotate(-20deg); }
+  .pill { background:var(--ink); color:var(--mist); padding:10px 20px; border-radius:999px; text-decoration:none; font-weight:600; }
+  .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:40px; align-items:center; padding-block:36px 72px; }
+  h1 { font:400 clamp(2.6rem,7vw,4.6rem)/1.02 'DM Serif Display',serif; margin:0 0 18px; }
+  h1 em { color:var(--teal); }
+  .lede { color:#3f6761; max-width:36ch; margin:0 0 26px; font-size:1.12rem; }
+  .btn { display:inline-block; background:var(--lemon); color:var(--ink); padding:15px 28px; border-radius:999px; font-weight:700; text-decoration:none; }
+  .card { background:var(--pearl); border-radius:28px; padding:28px; box-shadow:0 20px 50px -24px rgba(18,64,58,.35); }
+  .card h2 { font:400 1.6rem 'DM Serif Display',serif; margin:0 0 4px; }
+  .card small { color:#5b827b; }
+  .checks { list-style:none; margin:18px 0 0; padding:0; display:grid; gap:2px; }
+  .checks li { display:flex; gap:12px; align-items:center; padding:10px 0; border-top:1px dashed var(--soft); }
+  .checks li:first-child { border-top:0; }
+  .box { flex:none; width:22px; height:22px; border-radius:7px; background:var(--teal); display:grid; place-items:center; color:#fff; font-size:.8rem; font-weight:700; }
+  .rooms { padding-block:16px 72px; }
+  h2.big { font:400 clamp(2rem,5vw,3rem)/1.05 'DM Serif Display',serif; margin:0 0 8px; }
+  .sub { color:#3f6761; max-width:46ch; margin:0 0 30px; }
+  .tiers { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+  .tier { background:var(--pearl); border-radius:24px; padding:26px; display:flex; flex-direction:column; gap:8px; }
+  .tier.feat { background:var(--ink); color:var(--mist); }
+  .tier h3 { font:400 1.5rem 'DM Serif Display',serif; margin:0; }
+  .price { font:400 2.4rem/1 'DM Serif Display',serif; }
+  .price small { font:500 .9rem 'Figtree',sans-serif; opacity:.7; }
+  .tier p { margin:0; opacity:.85; font-size:.97rem; }
+  .tier.feat .flag { align-self:flex-start; background:var(--lemon); color:var(--ink); font-size:.75rem; font-weight:700; padding:3px 10px; border-radius:999px; letter-spacing:.05em; text-transform:uppercase; }
+  .note { margin-top:18px; color:#5b827b; font-size:.9rem; }
+  .eco { background:var(--soft); padding:44px 0; }
+  .eco .wrap { display:flex; gap:28px; align-items:center; flex-wrap:wrap; }
+  .eco p { margin:0; max-width:52ch; }
+  .eco b { font:400 1.8rem 'DM Serif Display',serif; flex:1 1 220px; }
+  footer { padding:28px 0; color:#5b827b; font-size:.9rem; }
+  @media (max-width:760px) { .hero { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="tag">Example site by VirtueWebApps. The business, phone, and prices are fictional.</div>
+<div class="wrap">
+  <nav>
+    <div class="logo"><i></i>Linen &amp; Lemon</div>
+    <a class="pill" href="tel:5550100150">(555) 010-0150</a>
+  </nav>
+  <section class="hero">
+    <div>
+      <h1>Come home to a <em>clean</em> you can smell.</h1>
+      <p class="lede">Reliable house cleaning on a schedule that fits your week, with the same two people every visit.</p>
+      <a class="btn" href="#plans">See plans</a>
+    </div>
+    <div class="card">
+      <h2>Every visit includes</h2>
+      <small>Your checklist, room by room</small>
+      <ul class="checks">
+        <li><span class="box">&#10003;</span>Kitchen: counters, stovetop, sink, fronts of appliances</li>
+        <li><span class="box">&#10003;</span>Bathrooms: tub, toilet, mirror, floors</li>
+        <li><span class="box">&#10003;</span>Bedrooms: dust, make beds, vacuum</li>
+        <li><span class="box">&#10003;</span>Living areas: surfaces, floors, glass</li>
+        <li><span class="box">&#10003;</span>Trash out, towels refreshed</li>
+      </ul>
+    </div>
+  </section>
+</div>
+<section class="rooms" id="plans">
+  <div class="wrap">
+    <h2 class="big">Pick a size, not a package</h2>
+    <p class="sub">Flat price by home size, so the bill never depends on how the day went.</p>
+    <div class="tiers">
+      <div class="tier"><h3>Studio &amp; 1-bed</h3><div class="price">$95 <small>per visit</small></div><p>Up to 900 sq ft. About two hours.</p></div>
+      <div class="tier feat"><span class="flag">Most booked</span><h3>2-3 bedroom</h3><div class="price">$150 <small>per visit</small></div><p>Up to 2,000 sq ft. About three hours.</p></div>
+      <div class="tier"><h3>Family home</h3><div class="price">$215 <small>per visit</small></div><p>Up to 3,200 sq ft. Two cleaners, about three hours.</p></div>
+    </div>
+    <p class="note">Example prices for demonstration only. Weekly and biweekly visits get a discount; the first visit is a deep clean.</p>
+  </div>
+</section>
+<section class="eco">
+  <div class="wrap">
+    <b>Bring nothing.</b>
+    <p>We arrive with our own vacuums, microfiber cloths, and fragrance-free plant-based cleaners. Tell us if anything in your home needs special care.</p>
+  </div>
+</section>
+<footer><div class="wrap">&copy; 2026 Linen &amp; Lemon Cleaning. Example business for demonstration only.</div></footer>
+</body>
+</html>
